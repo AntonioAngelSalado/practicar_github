@@ -1,0 +1,22 @@
+/**** cabecera ****/
+.cabecera {
+    background: #005a71;
+    h1 {
+      margin: 1rem 0;
+      font-size: 2rem;
+      color: $texto-claro;
+    }
+    .menu {
+      margin: 1rem 0;
+      .enlace {
+        font-size: 1.2rem;
+        color: $texto-claro;
+      }
+      &:hover {
+        color: $texto-resalta;
+      }
+    }
+  }
+      
+  
+        

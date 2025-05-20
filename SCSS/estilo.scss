@@ -1,0 +1,47 @@
+/*Estilos generales*/
+$texto-neutro: #333333;
+$texto-claro: #ffffff;
+$texto-resalta: #ffc500;
+$texto-enlace: #007788;
+$tablet:"(max-width: 1000px)";
+$movil: "(max-width: 600px)";
+
+@mixin posicion-cont($ancho,$margen){
+  width: $ancho;
+  position: relative;
+  height: auto;
+  margin: $margen;
+  padding: 0;
+  overflow: auto;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    color: $texto-neutro;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    color: $texto-neutro;
+  }
+  
+  p,span {
+    color: $texto-neutro
+  }
+  
+  img {
+    background: grey;
+  }
+
+  a {
+    color: $texto-enlace;
+    &:hover{
+      color: darken($texto-enlace,10)
+    }
+  }
+
+  @import "contenedores";
+  @import "cabecera";
+  @import "formularios";
+  
